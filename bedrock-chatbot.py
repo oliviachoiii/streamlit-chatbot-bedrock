@@ -8,6 +8,7 @@ ENDPOINT_LAMBDA_URL = "YOUR LAMBDA FUNCTION URL"
 # App title
 st.title("💬 Chatbot powered by Amazon Bedrock")
 st.caption("🚀 Tech Stack: Streamlit, AWS Lambda, Amazon EC2, AWS Cloud9")
+
 # Reset if there is no messages
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "How can I help you?"}]
@@ -16,7 +17,6 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.chat_message(message["role"]): 
         st.markdown(message["content"])  # Markdown the content of the message
-
 
 def get_streaming_response(prompt):
     s = requests.Session()
