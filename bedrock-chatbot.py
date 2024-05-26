@@ -3,7 +3,7 @@ import requests  # Import requests library to request HTTP
 import streamlit as st  # Import Streamlit library
 
 # Define Endpoint of AWS Lambda function URL
-ENDPOINT_LAMBDA_URL = "YOUR LAMBDA FUNCTION URL"
+ENDPOINT_LAMBDA_URL = "https://3xpms6ntpkz2ttix2upww3inta0ynvbx.lambda-url.us-east-1.on.aws/"
     
 # App title
 st.title("💬 Chatbot powered by Amazon Bedrock")
